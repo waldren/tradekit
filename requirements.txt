@@ -31,6 +31,11 @@ quandl
 alpha-vantage
 sec-edgar-downloader
 
+# data providers - social media
+tweepy                  # Python Twitter API Wrapper
+psaw                    # Python Pushshift.io API Wrapper
+praw                    # Python Reddit API Wrapper
+
 # visualization
 matplotlib
 plotly
@@ -84,5 +89,5 @@ passlib
 tensorflow
 scikit-learn
 keras
-torch
+# torch
 opencv-python
