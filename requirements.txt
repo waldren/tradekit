@@ -1,5 +1,5 @@
 # data analysis libraries
-numpy
+numpy==1.20             # force to use 1.20.0 to solve ta-lib issue
 scipy
 pandas
 pandas-datareader
@@ -86,8 +86,8 @@ click
 passlib
 
 # machine learning
-tensorflow
+# tensorflow        # to fix ta-lib/numpy issue numpy==1.20.0 needed and tf requires 1.19.2
 scikit-learn
 keras
-# torch
+# torch             # error when trying to install
 opencv-python

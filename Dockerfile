@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8.8-buster
 
 MAINTAINER Part Time Larry "parttimelarry@gmail.com"
 
@@ -20,7 +20,11 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   cd ta-lib/ && \
   ./configure --prefix=/usr && \
   make && \
-  make install
+  make install  
+  
+  # && \
+  # echo "include /usr/local/lib" >> /etc/ld.so.conf && \
+  # ldconfig 
 
 RUN rm -R ta-lib ta-lib-0.4.0-src.tar.gz
 
