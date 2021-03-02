@@ -1,5 +1,5 @@
 # Project Specific
-brokers/CONFIG.py
+waldren/base/CONFIG.py
 token.pickle
 chromedriver
 .vscode-root
