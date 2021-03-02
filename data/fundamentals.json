@@ -1,0 +1,222 @@
+{
+    "high52": {
+        "name": "52 Week High",
+        "def": "The 52-week high/low is the highest and lowest price at which a security, such as a stock, has traded during the time period that equates to one year.",
+        "use": "The 52-week high/low is the highest and lowest price at which a security has traded during the time period that equates to one year and is viewed as a technical indicator. The 52-week high/low is based on the daily closing price for the security. Typically, the 52-week high represents a resistance level, while the 52-week low is a support level that traders can use to trigger trading decisions."
+    },
+    "low52": {
+        "name": "52 Week Low",
+        "def": "The 52-week high/low is the highest and lowest price at which a security, such as a stock, has traded during the time period that equates to one year.",
+        "use": "The 52-week high/low is the highest and lowest price at which a security has traded during the time period that equates to one year and is viewed as a technical indicator. The 52-week high/low is based on the daily closing price for the security. Typically, the 52-week high represents a resistance level, while the 52-week low is a support level that traders can use to trigger trading decisions."
+    },
+    "dividendAmount": {
+        "name": "Dividend Amount"
+    },
+    "dividendYield": {
+        "name": "Dividend Yield"
+    },
+    "dividendDate": {
+        "name": "Dividend Date",
+        "def": "When a company declares a dividend, it sets a record date when you must be on the company's books as a shareholder to receive the dividend. Companies also use this date to determine who is sent proxy statements, financial reports, and other information."
+    },
+    "peRatio": {
+        "name": "Price to Earnings Ratio",
+        "def": "The price-to-earnings ratio (P/E ratio) is the ratio for valuing a company that measures its current share price relative to its per-share earnings (EPS). The price-to-earnings ratio is also sometimes known as the price multiple or the earnings multiple.",
+        "use": "The price-earnings ratio (P/E ratio) relates a company's share price to its earnings per share. A high P/E ratio could mean that a company's stock is over-valued, or else that investors are expecting high growth rates in the future. Companies that have no earnings or that are losing money do not have a P/E ratio since there is nothing to put in the denominator. Two kinds of P/E ratios - forward and trailing P/E - are used in practice."
+    },
+    "pegRatio": {
+        "name": "Price/Earnings-to-Growth Ratio",
+        "def": "The price/earnings to growth ratio (PEG ratio) is a stock's price-to-earnings (P/E) ratio divided by the growth rate of its earnings for a specified time period. The PEG ratio is used to determine a stock's value while also factoring in the company's expected earnings growth, and it is thought to provide a more complete picture than the more standard P/E ratio.",
+        "use": "The PEG ratio enhances the P/E ratio by adding in expected earnings growth into the calculation. The PEG ratio is considered to be an indicator of a stock's true value, and similar to the P/E ratio, a lower PEG may indicate that a stock is undervalued. The PEG for a given company may differ significantly from one reported source to another, depending on which growth estimate is used in the calculation, such as one-year or three-year projected growth."
+    },
+    "pbRatio": {
+        "name": "Price-To-Book Ratio",
+        "def": "Companies use the price-to-book ratio (P/B ratio) to compare a firm's market capitalization to its book value. It's calculated by dividing the company's stock price per share by its book value per share (BVPS). An asset's book value is equal to its carrying value on the balance sheet, and companies calculate it netting the asset against its accumulated depreciation.",
+        "use": "The P/B ratio measures the market's valuation of a company relative to its book value. The market value of equity is typically higher than the book value of a company, P/B ratio is used by value investors to identify potential investments. P/B ratios under 1 are typically considered solid investments."
+    },
+    "prRatio": {
+        "name": "Price to Revenue Ratio (or Price to Sales)",
+        "def": "The price-to-sales (P/S) ratio is a valuation ratio that compares a company’s stock price to its revenues. It is an indicator of the value that financial markets have placed on each dollar of a company’s sales or revenues.",
+        "use": "The price-to-sales (P/S) ratio is a key analysis and valuation tool that shows how much investors are willing to pay per dollar of sales for a stock. The P/S ratio is typically calculated by dividing the stock price by the underlying company's sales per share. A low ratio could imply the stock is undervalued while a ratio that is higher-than-average could indicate that the stock is overvalued. One of the downsides of the P/S ratio is that it doesn’t take into account whether the company makes any earnings or whether it will ever make earnings."
+    },
+    "pcfRatio": {
+        "name": "Price-to-Cash Flow Ratio",
+        "def": "The price-to-cash flow (P/CF) ratio is a stock valuation indicator or multiple that measures the value of a stock’s price relative to its operating cash flow per share. The ratio uses operating cash flow which adds back non-cash expenses such as depreciation and amortization to net income. It is especially useful for valuing stocks that have positive cash flow but are not profitable because of large non-cash charges.",
+        "use": "The price-to-cash flow ratio is a multiple that compares a company's market value to its operating cash flow or its stock price per share to operating cash flow per share. The price-to-cash flow multiple works well for companies that have large non-cash expenses such as depreciation. A low multiple implies that a stock may be undervalued."
+    },
+    "grossMarginTTM": {
+        "name": "Gross Margin Trailing 12 Months",
+        "def": "Gross profit margin is a measure of profitability that shows the percentage of revenue that exceeds the cost of goods sold (COGS). The gross profit margin reflects how successful a company's executive management team is in generating revenue, considering the costs involved in producing their products and services. In short, the higher the number, the more efficient management is in generating profit for every dollar of cost involved.  The gross profit margin is calculated by taking total revenue minus the COGS and dividing the difference by total revenue. The gross margin result is typically multiplied by 100 to show the figure as a percentage. The COGS is the amount it costs a company to produce the goods or services that it sells. ",
+        "use": "Investors and analysts typically use both gross profit margin and net profit margin to gauge how efficient a company's management is in earning profits relative to the costs involved in producing their goods and services. It is wise to compare the margins of companies within the same industry and over multiple periods to get a sense of any trends."
+    },
+    "grossMarginMRQ": {
+        "name": "Gross Margin Most Recent Quarter",
+        "def": "Gross profit margin is a measure of profitability that shows the percentage of revenue that exceeds the cost of goods sold (COGS). The gross profit margin reflects how successful a company's executive management team is in generating revenue, considering the costs involved in producing their products and services. In short, the higher the number, the more efficient management is in generating profit for every dollar of cost involved.  The gross profit margin is calculated by taking total revenue minus the COGS and dividing the difference by total revenue. The gross margin result is typically multiplied by 100 to show the figure as a percentage. The COGS is the amount it costs a company to produce the goods or services that it sells. ",
+        "use": "Investors and analysts typically use both gross profit margin and net profit margin to gauge how efficient a company's management is in earning profits relative to the costs involved in producing their goods and services. It is wise to compare the margins of companies within the same industry and over multiple periods to get a sense of any trends."
+    },
+    "netProfitMarginTTM": {
+        "name": "Net Profit Margin Trailing 12 Months",
+        "def": "The net profit margin is the ratio of net profits to revenues for a company or business segment. Expressed as a percentage, the net profit margin shows how much of each dollar collected by a company as revenue translates to profit.  Net profitability is an important distinction since increases in revenue do not necessarily translate into increased profitability. Net profit is the gross profit (revenue minus COGS) minus operating expenses and all other expenses, such as taxes and interest paid on debt. Although it may appear more complicated, net profit is calculated for us and provided on the income statement as net income. ",
+        "use": "Investors and analysts typically use both gross profit margin and net profit margin to gauge how efficient a company's management is in earning profits relative to the costs involved in producing their goods and services. It is wise to compare the margins of companies within the same industry and over multiple periods to get a sense of any trends."
+    },
+    "netProfitMarginMRQ": {
+        "name": "Net Profit Margin Most Recent Quarter",
+        "def": "The net profit margin is the ratio of net profits to revenues for a company or business segment. Expressed as a percentage, the net profit margin shows how much of each dollar collected by a company as revenue translates to profit.  Net profitability is an important distinction since increases in revenue do not necessarily translate into increased profitability. Net profit is the gross profit (revenue minus COGS) minus operating expenses and all other expenses, such as taxes and interest paid on debt. Although it may appear more complicated, net profit is calculated for us and provided on the income statement as net income. ",
+        "use": "Investors and analysts typically use both gross profit margin and net profit margin to gauge how efficient a company's management is in earning profits relative to the costs involved in producing their goods and services. It is wise to compare the margins of companies within the same industry and over multiple periods to get a sense of any trends."
+    },
+    "operatingMarginTTM": {
+        "name": "Operating Margin Trailing 12 Months",
+        "def": "perating margin measures how much profit a company makes on a dollar of sales after paying for variable costs of production, such as wages and raw materials, but before paying interest or tax. It is calculated by dividing a company’s operating income by its net sales.",
+        "use": "Operating margin helps investors understand how a business makes money; if it is generating income primarily from core operations, or other means, such as investments. An increasing operating margin over a period of time indicates a company whose profitability is improving."
+    },
+    "operatingMarginMRQ": {
+        "name": "Operating Margin Most Recent Quarter",
+        "def": "perating margin measures how much profit a company makes on a dollar of sales after paying for variable costs of production, such as wages and raw materials, but before paying interest or tax. It is calculated by dividing a company’s operating income by its net sales.",
+        "use": "Operating margin helps investors understand how a business makes money; if it is generating income primarily from core operations, or other means, such as investments. An increasing operating margin over a period of time indicates a company whose profitability is improving."
+    },
+    "returnOnEquity": {
+        "name": "Return On Equity",
+        "def": " a measure of financial performance calculated by dividing net income by shareholders' equity. Because shareholders' equity is equal to a company’s assets minus its debt, ROE is considered the return on net assets. ROE is considered a measure of the profitability of a corporation in relation to stockholders’ equity.",
+        "use": "Whether an ROE is considered satisfactory will depend on what is normal for the industry or company peers. As a shortcut, investors can consider an ROE near the long-term average of the S&P 500 (14%) as an acceptable ratio and anything less than 10% as poor."
+    },
+    "returnOnAssets": {
+        "name": "Return on Assests",
+        "def": "an indicator of how profitable a company is relative to its total assets. ROA gives a manager, investor, or analyst an idea as to how efficient a company's management is at using its assets to generate earnings. Return on assets is displayed as a percentage.",
+        "use": "ROA is best used when comparing similar companies or comparing a company to its previous performance. ROA takes into account a company’s debt, unlike other metrics, such as Return on Equity (ROE)."
+    },
+    "returnOnInvestment": {
+        "name": "Return On Investment",
+        "def": "a performance measure used to evaluate the efficiency of an investment or compare the efficiency of a number of different investments. ROI tries to directly measure the amount of return on a particular investment, relative to the investment’s cost. To calculate ROI, the benefit (or return) of an investment is divided by the cost of the investment. The result is expressed as a percentage or a ratio.",
+        "use": ""
+    },
+    "quickRatio": {
+        "name": "Quick Ratio",
+        "def": "an indicator of a company’s short-term liquidity position and measures a company’s ability to meet its short-term obligations with its most liquid assets. Since it indicates the company’s ability to instantly use its near-cash assets (assets that can be converted quickly to cash) to pay down its current liabilities, it is also called the acid test ratio. An acid test is a quick test designed to produce instant results—hence, the name.",
+        "use": "The quick ratio indicates a company's capacity to pay its current liabilities without needing to sell its inventory or get additional financing. The quick ratio is considered a more conservative measure than the current ratio, which includes all current assets as coverage for current liabilities. The higher the ratio result, the better a company's liquidity and financial health; the lower the ratio, the more likely the company will struggle with paying debts."
+    },
+    "currentRatio": {
+        "name": "Current Ratio",
+        "def": "a liquidity ratio that measures a company's ability to pay short-term obligations or those due within one year. It tells investors and analysts how a company can maximize the current assets on its balance sheet to satisfy its current debt and other payables.",
+        "use": "The current ratio is sometimes referred to as the “working capital” ratio and helps investors understand more about a company’s ability to cover its short-term debt with its current assets. Weaknesses of the current ratio include the difficulty of comparing the measure across industry groups, overgeneralization of the specific asset and liability balances, and the lack of trending information."
+    },
+    "interestCoverage": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "totalDebtToCapital": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "ltDebtToEquity": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "totalDebtToEquity": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "epsTTM": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "epsChangePercentTTM": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "epsChangeYear": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "epsChange": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "revChangeYear": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "revChangeTTM": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "revChangeIn": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "sharesOutstanding": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "marketCapFloat": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "marketCap": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "bookValuePerShare": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "shortIntToFloat": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "shortIntDayToCover": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "divGrowthRate3Year": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "dividendPayAmount": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "dividendPayDate": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "beta": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "vol1DayAvg": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "vol10DayAvg": {
+        "name": "",
+        "def": "",
+        "use": ""
+    },
+    "vol3MonthAvg": {
+        "name": "",
+        "def": "",
+        "use": ""
+    }
+}

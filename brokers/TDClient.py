@@ -6,9 +6,10 @@ import datetime
 from datetime import timedelta
 import pandas as pd 
 import os
+import sys 
 
 class TDClient:
-    def __init__(self, config):
+    def __init__(self, config=config):
         self.c = self.authenticate(config)
         self.config = config
 
@@ -18,7 +19,7 @@ class TDClient:
             return auth.client_from_token_file(config.TOKEN_PATH, config.API_KEY)
         except FileNotFoundError:
             from selenium import webdriver
-            with webdriver.Chrome(executable_path=config.chromedriver_path) as driver:
+            with webdriver.Chrome(executable_path=config.CHROME_DRIVER_PATH) as driver:
                 return auth.client_from_login_flow(
                     driver, config.API_KEY, config.REDIRECT_URL, config.TOKEN_PATH)
 
@@ -92,11 +93,28 @@ class TDClient:
         r.close()
         return df
     
-    def get_save_fundamentals(self, symbol):
+    def get_fundamentals(self, symbol):
         r = self.c.search_instruments(symbol, client.Client.Instrument.Projection.FUNDAMENTAL)
         j = r.json()
-        fund = j[symbol]['fundamental']
-        fund['datetime'] = datetime.datetime.now()
+        try:
+            fund = j[symbol]['fundamental']
+            fund['datetime'] = datetime.datetime.now()
+        except:
+            try:
+                # We have have sent too many API calls, stop the program
+                if j['error'] == "Individual App\'s transactions per seconds restriction reached. Please contact us with further questions":
+                    sys.exit(1)
+            except:
+                # Must have been another error, print the JSON and then set fund to None
+                print("ERROR=============")
+                print(j) 
+                print("==================")
+                fund = None
+        return fund
+
+    def get_save_fundamentals(self, symbol):
+        fund = self.get_fundamentals(self, symbol)
+
         #see if a fundamental dataframe exists
         pickle_path = '{0}/{1}/{1}_fundamental.pickle'.format(config.DATA_PATH, symbol)
         if os.path.exists(pickle_path):
@@ -139,9 +157,10 @@ def save_stock_data(tc,s):
 
 def run():
     tc = TDClient(config)
-    s = 'AMZN'
-    save_stock_data(tc, s)
+    s = 'ADV'
+    j = tc.get_fundamentals(s)
+    print(j)
     
 if __name__ == '__main__':
-    watchlist()
-   #S run()
+    # watchlist()
+    run()

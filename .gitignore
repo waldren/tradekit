@@ -2,6 +2,7 @@
 brokers/CONFIG.py
 token.pickle
 chromedriver
+.vscode-root
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
