@@ -42,13 +42,16 @@ class TDClient:
     Function to get a standand daily candles for the supplied period. Period type 
     is `YEAR`
     '''
-    def get_price_daily_history(self, symbol, period=client.Client.PriceHistory.Period.TWENTY_YEARS):
+    def get_price_daily_history(self, symbol, period=client.Client.PriceHistory.Period.TWENTY_YEARS, save=False):
 
         period_type=client.Client.PriceHistory.PeriodType.YEAR
         frequency_type=client.Client.PriceHistory.FrequencyType.DAILY
         frequency=client.Client.PriceHistory.Frequency.DAILY
+        if save:
+            return self.get_save_price_history(symbol=symbol,period_type=period_type,period=period,frequency_type=frequency_type,frequency=frequency)
+        else:
+            return self.get_price_history(symbol=symbol,period_type=period_type,period=period,frequency_type=frequency_type,frequency=frequency)
 
-        return self.get_save_price_history(symbol=symbol,period_type=period_type,period=period,frequency_type=frequency_type,frequency=frequency)
 
     '''
     Function to get a standand intraday candles for every minute for the supplied period. Period type 
@@ -62,7 +65,7 @@ class TDClient:
         # end_datetime=end_datetime, start_datetime=start_datetime,
         return self.get_save_price_history(symbol=symbol, period_type=period_type, period=period, frequency_type=frequency_type,frequency=frequency)
 
-    def get_save_price_history(self, **kwargs):
+    def get_price_history(self, **kwargs):
         # call the TD API and grab the json
         r = self.c.get_price_history(**kwargs)
         j = r.json()
@@ -79,6 +82,11 @@ class TDClient:
 
         # get the dataframe from the candles and save the dataframe as a CSV file
         df = self.convert_symbol_price_hx_todataframe(j)
+        return df 
+    
+    def get_save_price_history(self, **kwargs):
+        df = self.get_price_history(self, **kwargs)
+
         ftype = self.get_freq_type_str(kwargs['frequency_type'])
         # create a folder structure so each symbol has its own folder with some foler for each frequency type
         outpath = '{}/{}/{}'.format(config.DATA_PATH, kwargs['symbol'], ftype)

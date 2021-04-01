@@ -103,8 +103,8 @@ def main():
 
     cursor = connection.cursor()
     
-    # load_stocks(cursor)
-    # connection.commit()
+    load_stocks(cursor)
+    connection.commit()
 
     # load_fundamental(cursor)
     # connection.commit()

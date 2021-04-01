@@ -1,8 +1,14 @@
 # Project Specific
 waldren/base/CONFIG.py
+data/assets
 token.pickle
 chromedriver
 .vscode-root
+.vscode
+data/training
+data/*.pickle
+data/*.txt 
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
